@@ -1,4 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/foodscreen/biryani.dart';
+import 'package:foodapp/foodscreen/buffsekuwa.dart';
+import 'package:foodapp/foodscreen/chicken_pizza.dart';
+import 'package:foodapp/foodscreen/hamburger.dart';
+import 'package:foodapp/foodscreen/mixedPizza.dart';
+import 'package:foodapp/foodscreen/mushroomPizza.dart';
+import 'package:foodapp/foodscreen/muttonsekuwa.dart';
+import 'package:foodapp/foodscreen/porksekuwa.dart';
+import 'package:foodapp/foodscreen/samosha.dart';
 import 'package:foodapp/login.dart';
 import 'package:foodapp/search.dart';
 import 'package:foodapp/settings.dart';
@@ -20,6 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return DefaultTabController(
         length: 4,
         child: Scaffold(
+          resizeToAvoidBottomInset:false,
           appBar: AppBar(
             automaticallyImplyLeading: false,
             centerTitle: false,
@@ -189,7 +199,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title: const Text('Biryani'),
           subtitle: const Text('Rs.100'),
           trailing:const Text('20% off'),
-          onTap: (){},
+          onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: ((context) => const Biryani())));
+          },
         ),
 
 
@@ -205,7 +217,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Samosha'),
           subtitle:const Text('Rs.50. Per piece'),
           trailing:const Text('10% off'),
-           onTap: (){},
+           onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: ((context) => const SamosaScreen())));
+           },
         ),
 
 
@@ -221,7 +235,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Chicken Pizza'),
           subtitle:const Text('Rs.1000'),
           trailing:const Text('5% off'),
-           onTap: (){},
+           onTap: (){
+             Navigator.push(context, MaterialPageRoute(builder: ((context) => const ChickenPizza())));
+           },
         ),
 
 
@@ -236,7 +252,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Mushroom Pizza'),
           subtitle:const Text('Rs.900'),
           trailing:const Text('20% off'),
-           onTap: (){},
+           onTap: (){
+             Navigator.push(context, MaterialPageRoute(builder: ((context) => const MushRoomPizza())));
+           },
         ),
 
        const  SizedBox(height: 10,),
@@ -249,7 +267,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Mixed Pizza'),
           subtitle:const Text('Rs.1100'),
           trailing:const Text('20% off'),
-           onTap: (){},
+           onTap: (){
+             Navigator.push(context, MaterialPageRoute(builder: ((context) => const MixedPizza())));
+           },
         ),
 
       const   SizedBox(height: 10,),
@@ -262,7 +282,10 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Ham Burger'),
           subtitle:const Text('Rs.350'),
           trailing: const Text('10% off'),
-           onTap: (){},
+           onTap: (){
+             Navigator.push(context, MaterialPageRoute(builder: ((context) => const HamBurger())));
+
+           },
         ),
        const  SizedBox(height: 10,),
          ListTile(
@@ -274,7 +297,10 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Mutton Sekuwa'),
           subtitle:const Text('Rs.300. Per stick'),
           trailing:const Text('30% off'),
-           onTap: (){},
+           onTap: (){
+             Navigator.push(context, MaterialPageRoute(builder: ((context) => const MuttonSekuwa())));
+
+           },
         ),
        const  SizedBox(height: 10,),
          ListTile(
@@ -286,7 +312,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Buff Sekuwa'),
           subtitle:const Text('Rs.100. Per stick'),
           trailing:const Text('25% off'),
-           onTap: (){},
+           onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: ((context) => const BuffSekuwa())));
+           },
         ),
        const  SizedBox(height: 10,),
          ListTile(
@@ -298,7 +326,10 @@ class _HomeScreenState extends State<HomeScreen> {
           title:const Text('Pork Sekuwa'),
           subtitle:const Text('Rs.250. Per stick'),
           trailing:const Text('20% off'),
-           onTap: (){},
+           onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: ((context) => const PorkSekuwa())));
+
+           },
         ),
         ],
   ),
