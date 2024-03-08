@@ -12,9 +12,7 @@ class LogIn extends StatefulWidget {
 class _LogInState extends State<LogIn> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _phonenumber = TextEditingController();
-   final TextEditingController _emailControllerSignup = TextEditingController();
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +37,8 @@ class _LogInState extends State<LogIn> {
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.blue,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "NotoSerif-Italic"
                 ),
               ),
             ),
@@ -119,6 +118,7 @@ class _LogInState extends State<LogIn> {
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
+   
     super.dispose();
   }
 }

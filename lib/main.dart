@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/splash_screen.dart';
-import 'package:foodapp/login.dart';
 
 void main() {
   runApp(const MyApp());
