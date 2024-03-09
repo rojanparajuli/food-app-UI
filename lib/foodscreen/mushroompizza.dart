@@ -14,7 +14,7 @@ class _MushRoomPizzaState extends State<MushRoomPizza> {
     return Scaffold(
       resizeToAvoidBottomInset:false,
         appBar: AppBar(
-          title: Text('Buy Mushroom Pizza'),
+          title: const Text('Buy Mushroom Pizza'),
         ),
         body: Center(
           child: Column(
@@ -25,21 +25,21 @@ class _MushRoomPizzaState extends State<MushRoomPizza> {
                 width: 400, 
                 height: 500,
               ),
-              SizedBox(height: 10),
-              Text(
+           const   SizedBox(height: 10),
+             const Text(
                 'Rs.900',
                 
                 style: TextStyle(
                   fontSize: 24,
                 ),
               ),
-              SizedBox(height: 10),
+           const   SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,MaterialPageRoute(builder: (context)=> OrderSucessful()));
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=>const OrderSucessful()));
               
                 },
-                child: Text('Buy Now'),
+                child:const Text('Buy Now'),
               ),
             ],
           ),

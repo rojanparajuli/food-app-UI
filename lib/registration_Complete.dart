@@ -17,7 +17,7 @@ class _RegisteredState extends State<Registered> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/Food APP.jpg', // Replace with your asset path
+              'assets/Food APP.jpg', 
               width: 150,
               height: 150,
             ),
@@ -46,3 +46,4 @@ class _RegisteredState extends State<Registered> {
 
 
   
+//just to commit a code

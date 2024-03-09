@@ -14,7 +14,7 @@ class _HamBurgerState extends State<HamBurger> {
     return Scaffold(
       resizeToAvoidBottomInset:false,
         appBar: AppBar(
-          title: Text('Buy Ham Burger'),
+          title:const Text('Buy Ham Burger'),
         ),
         body: Center(
           child: Column(
@@ -25,21 +25,21 @@ class _HamBurgerState extends State<HamBurger> {
                 width: 400, 
                 height: 500,
               ),
-              SizedBox(height: 10),
-              Text(
+           const   SizedBox(height: 10),
+           const   Text(
                 'Rs.350',
                 
                 style: TextStyle(
                   fontSize: 24,
                 ),
               ),
-              SizedBox(height: 10),
+             const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,MaterialPageRoute(builder: (context)=> OrderSucessful()));
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=>const OrderSucessful()));
               
                 },
-                child: Text('Buy Now'),
+                child:const Text('Buy Now'),
               ),
             ],
           ),

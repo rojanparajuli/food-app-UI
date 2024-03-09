@@ -15,7 +15,7 @@ class _OrderSucessfulState extends State<OrderSucessful> {
     return  Scaffold(
         
         body: Container(
-          decoration: BoxDecoration(
+          decoration:const BoxDecoration(
            gradient: LinearGradient(
             colors: [Colors.white, Colors.lightBlue],
             begin: Alignment.topRight,
@@ -26,12 +26,12 @@ class _OrderSucessfulState extends State<OrderSucessful> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
+             const   Icon( 
                   Icons.thumb_up,
                   size: 100,
                   color: Colors.green,
                 ),
-                SizedBox(height: 20),
+             const   SizedBox(height: 20),
                 Text(
                   'Thank you for buying with us!',
                   style: TextStyle(
@@ -40,13 +40,13 @@ class _OrderSucessfulState extends State<OrderSucessful> {
                     color: Colors.green[800],
                   ),
                 ),
-                SizedBox(height: 40,),
+               const SizedBox(height: 40,),
                  ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,MaterialPageRoute(builder: (context)=> HomeScreen()));
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=>const HomeScreen()));
               
                 },
-                child: Text('Back'),
+                child:const Text('Back'),
               ),
               ],
             ),

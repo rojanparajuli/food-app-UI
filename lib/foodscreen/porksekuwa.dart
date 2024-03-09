@@ -14,7 +14,7 @@ class _PorkSekuwaState extends State<PorkSekuwa> {
     return Scaffold(
       resizeToAvoidBottomInset:false,
         appBar: AppBar(
-          title: Text('Buy Pork sekuwa'),
+          title:const Text('Buy Pork sekuwa'),
         ),
         body: Center(
           child: Column(
@@ -25,21 +25,21 @@ class _PorkSekuwaState extends State<PorkSekuwa> {
                 width: 400, 
                 height: 500,
               ),
-              SizedBox(height: 10),
-              Text(
+           const   SizedBox(height: 10),
+           const   Text(
                 'Rs.250/ Per stick',
                 
                 style: TextStyle(
                   fontSize: 24,
                 ),
               ),
-              SizedBox(height: 10),
+            const  SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,MaterialPageRoute(builder: (context)=> OrderSucessful()));
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=>const OrderSucessful()));
               
                 },
-                child: Text('Buy Now'),
+                child:const Text('Buy Now'),
               ),
             ],
           ),
