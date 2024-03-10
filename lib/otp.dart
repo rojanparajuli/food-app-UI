@@ -44,7 +44,7 @@ class _OneTimePasswordState extends State<OneTimePassword> {
             fieldWidth: 40,
             style: const TextStyle(
                 fontSize: 16,
-                fontWeight: FontWeight.bold), // Apply bold font weight
+                fontWeight: FontWeight.bold), 
             textFieldAlignment: MainAxisAlignment.spaceAround,
             fieldStyle: FieldStyle.underline,
             onCompleted: (pin) {

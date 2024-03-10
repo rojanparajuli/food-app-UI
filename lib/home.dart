@@ -9,10 +9,10 @@ import 'package:foodapp/foodscreen/muttonsekuwa.dart';
 import 'package:foodapp/foodscreen/porksekuwa.dart';
 import 'package:foodapp/foodscreen/samosha.dart';
 import 'package:foodapp/login.dart';
+import 'package:foodapp/profile.dart';
 import 'package:foodapp/search.dart';
 import 'package:foodapp/settings.dart';
 import 'package:foodapp/support.dart';
-import 'package:boxy/boxy.dart';
 
 
 
@@ -96,14 +96,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const SupportScreen()),
+                          builder: (context) => const ProfileScreen()),
                     );
                   } else if (value == '2') {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Settings()),
+                      MaterialPageRoute(builder: (context) => const SupportScreen()),
                     );
                   } else if (value == '3') {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Settings()),
+                    );
+                  }
+                  else if (value == '3') {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const LogIn()),
@@ -111,16 +117,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 },
                 itemBuilder: (context) => const [
-                  PopupMenuItem(
+                   PopupMenuItem(
                     value: '1',
-                    child: Text('Support'),
+                    child: Text('Logout'),
                   ),
                   PopupMenuItem(
                     value: '2',
-                    child: Text('Settings'),
+                    child: Text('Support'),
                   ),
                   PopupMenuItem(
                     value: '3',
+                    child: Text('Settings'),
+                  ),
+                  PopupMenuItem(
+                    value: '4',
                     child: Text('Logout'),
                   ),
                 ],
