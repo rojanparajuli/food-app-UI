@@ -8,6 +8,7 @@ import 'package:foodapp/foodscreen/mushroomPizza.dart';
 import 'package:foodapp/foodscreen/muttonsekuwa.dart';
 import 'package:foodapp/foodscreen/porksekuwa.dart';
 import 'package:foodapp/foodscreen/samosha.dart';
+import 'package:foodapp/home1.dart';
 import 'package:foodapp/login.dart';
 import 'package:foodapp/profile.dart';
 import 'package:foodapp/search.dart';
@@ -119,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemBuilder: (context) => const [
                    PopupMenuItem(
                     value: '1',
-                    child: Text('Logout'),
+                    child: Text('profile'),
                   ),
                   PopupMenuItem(
                     value: '2',
@@ -139,10 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         body: TabBarView(
   children: [
-    Container(
-      alignment: Alignment.center,
-      child:const Text('This is the first tab content'),
-    ),
+   const HomeTab(),
 
 
 

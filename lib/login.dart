@@ -22,7 +22,7 @@ class _LogInState extends State<LogIn> {
        Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/Food APP.jpg"), 
+            image: AssetImage("assets/food_app.jpg"), 
             fit: BoxFit.cover,
           ),
         ),
