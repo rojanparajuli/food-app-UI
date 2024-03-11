@@ -33,11 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
           appBar: AppBar(
             automaticallyImplyLeading: false,
             centerTitle: false,
-            backgroundColor: const Color.fromARGB(255, 240, 228, 117),
+            backgroundColor:  Colors.black,
             title: const Center(
               child: Text('Food app',
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontFamily: "NotoSerif-Italic")),
             ),
