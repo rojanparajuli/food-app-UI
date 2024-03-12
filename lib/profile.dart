@@ -31,8 +31,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
        const   Text( 
             'NAME:xyz',
             style: TextStyle(
-                fontSize: 40, color: Colors.pink, fontWeight: FontWeight.bold),
+                fontSize: 20, color: Colors.pink, fontWeight: FontWeight.bold),
           ),
+          const  SizedBox(height: 10,),
+         const Text('NUMBER : 1234567890'),
+        const  SizedBox(height: 10,),
+         const Text('  EMAIL : abc@gmail.com'),
          
         ],
       ),
