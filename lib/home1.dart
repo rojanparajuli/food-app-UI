@@ -4,7 +4,7 @@ class HomeTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   Container(
+    return Const  Container(
       alignment: Alignment.center,
       child: const Text('This is the first tab content'),
     );
