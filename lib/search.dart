@@ -5,15 +5,37 @@ class SearchScreen extends StatefulWidget {
   @override
   State<SearchScreen> createState() => _SearchScreenState();
 }
+ final TextEditingController _SearchController = TextEditingController();
 
 class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
-     return const Scaffold(
+     return  Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      Center(child: Text('Page Not Found')),
+    Container(
+          child:Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: TextFormField(
+                controller: _SearchController,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  labelText: 'Search',
+                  filled: true,
+                  prefixIcon: const Icon(Icons.search),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: const BorderSide(color: Colors.blue),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
+              ),
+            ),
+
+      ),
     ],
       ),
     );
