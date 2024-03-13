@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/foodscreen/biryani.dart';
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
@@ -30,16 +31,22 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: Expanded(
-              flex: 1,
-              child: Padding(
-                padding: const EdgeInsets.all(20),
-                child: Image.asset('assets/biryani.png'),
-              ),
-            ),
-          ),
+         Padding(
+  padding: const EdgeInsets.all(10),
+  child: GestureDetector(
+    onTap: () {
+      Navigator.push(context, MaterialPageRoute(builder: ((context) => const Biryani())));
+    },
+    child: Expanded(
+      flex: 1,
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Image.asset('assets/biryani.png'),
+      ),
+    ),
+  ),
+),
+
          const Text(' Special Biryan'),
        const   SizedBox(height: 20,),
           Padding(
