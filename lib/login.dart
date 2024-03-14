@@ -108,7 +108,7 @@ class _LogInState extends State<LogIn> {
                   child: const Text(
                     'SIGN UP',
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: Colors.green,
                       decoration: TextDecoration.underline,
                     ),
                     
