@@ -6,7 +6,7 @@ class SearchScreen extends StatefulWidget {
   @override
   State<SearchScreen> createState() => _SearchScreenState();
 }
- final TextEditingController _SearchController = TextEditingController();
+ final TextEditingController _searchController = TextEditingController();
 
 class _SearchScreenState extends State<SearchScreen> {
   @override
@@ -18,7 +18,7 @@ class _SearchScreenState extends State<SearchScreen> {
           Container(
             padding: const  EdgeInsets.symmetric(horizontal: 10),
             child: TextField(
-              controller: _SearchController,
+              controller: _searchController,
               decoration: InputDecoration(
                 hintText: ('Search'),
                 border:  OutlineInputBorder(

@@ -9,6 +9,7 @@ import 'package:foodapp/foodscreen/muttonsekuwa.dart';
 import 'package:foodapp/foodscreen/porksekuwa.dart';
 import 'package:foodapp/foodscreen/samosha.dart';
 import 'package:foodapp/home1.dart';
+import 'package:foodapp/home2.dart';
 import 'package:foodapp/login.dart';
 import 'package:foodapp/profile.dart';
 import 'package:foodapp/search.dart';
@@ -141,59 +142,13 @@ class _HomeScreenState extends State<HomeScreen> {
         body: TabBarView(
   children: [
    const HomeTab(),
+    const HomeTab2(),
 
 
 
 
 
-
-    ListView(
-      children:<Widget> [
-        ListTile(
-          leading: const CircleAvatar(backgroundImage: NetworkImage('https://image.similarpng.com/very-thumbnail/2020/06/kfc-logo-free-download-PNG.png')),
-          title:const Text('KFC'),
-          subtitle:const Text('Madhyapur, Thimi-5, Radhe Radhe, Bhaktapur'),
-          trailing:const Text('1km Away'),
-          onTap: (){},
-        ),
-      const  SizedBox(height: 10,),
-
-        ListTile(leading:const CircleAvatar(backgroundImage: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pizza_Hut_international_logo_2014.svg/1200px-Pizza_Hut_international_logo_2014.svg.png')),
-          title:const Text('Pizza Hut'),
-          subtitle: const Text('Madhyapur, Thimi-5, Radhe Radhe, Bhaktapur'),
-          trailing: const Text('1km Away'),
-          onTap: (){},
-        ),
-     const   SizedBox(height: 10,),
-        
-        ListTile(leading:const CircleAvatar(backgroundImage: NetworkImage('https://res.cloudinary.com/dpqvbxdpf/image/upload/h_600,c_scale,f_auto/v1611721030/uploads/ProfileImage/gpbi9he8nrbpjveblv4v.png')),
-          title: const Text('Trishara'),
-          subtitle: const Text('Durbarmarg, Kathmandu'),
-          trailing:const Text('15km Away'),
-          onTap: (){},
-        ),
-
-     const    SizedBox(height: 10,),
-        
-        ListTile(leading:const CircleAvatar(backgroundImage: NetworkImage('https://www.qualtosoft.com/img/client_logo/Bajeko-Sekuwa-Logo.jpg')),
-          title: const Text('Bajeko Sekuwa'),
-          subtitle: const Text('Gathaghar, Bhaktapur'),
-          trailing:const Text('3km Away'),
-          onTap: (){},
-        ),
-   const     SizedBox(height: 10,),
-        
-        ListTile(leading: const CircleAvatar(backgroundImage: NetworkImage('https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee-500x500.png')),
-          title: const Text('Urmi Cafe'),
-          subtitle: const Text('Radhe Radhe, Bhaktapur'),
-          trailing: const Text('500m Away'),
-          onTap: (){},
-        ),
-
-
-      ]
-    ),
-
+   
     
     // location sakiyo
   ListView(

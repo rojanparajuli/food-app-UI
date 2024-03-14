@@ -85,11 +85,11 @@ class _LogInState extends State<LogIn> {
             ),
             const SizedBox(height: 55),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
               onPressed: () {
                Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
               },
-              child: const Text('SIGN IN', style: TextStyle( color: Colors.black),),
+              child: const Text('SIGN IN', style: TextStyle( color: Colors.white),),
             ),
             const SizedBox(height: 20),
             Row(
