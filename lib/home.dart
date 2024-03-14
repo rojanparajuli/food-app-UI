@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/foodscreen/biryani.dart';
-import 'package:foodapp/foodscreen/buffsekuwa.dart';
-import 'package:foodapp/foodscreen/chicken_pizza.dart';
-import 'package:foodapp/foodscreen/hamburger.dart';
-import 'package:foodapp/foodscreen/mixedPizza.dart';
-import 'package:foodapp/foodscreen/mushroomPizza.dart';
-import 'package:foodapp/foodscreen/muttonsekuwa.dart';
-import 'package:foodapp/foodscreen/porksekuwa.dart';
-import 'package:foodapp/foodscreen/samosha.dart';
 import 'package:foodapp/home1.dart';
 import 'package:foodapp/home2.dart';
 import 'package:foodapp/home3.dart';
+import 'package:foodapp/home4.dart';
 import 'package:foodapp/login.dart';
 import 'package:foodapp/profile.dart';
 import 'package:foodapp/search.dart';
@@ -140,11 +132,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-        body: TabBarView(
+        body: const TabBarView(
   children: [
-   const HomeTab(),
-    const HomeTab2(),
-    const HomeTap3(),
+    HomeTab(),
+     HomeTab2(),
+     HomeTap3(),
+     HomeTap4(),
 
 
 
@@ -302,10 +295,10 @@ class _HomeScreenState extends State<HomeScreen> {
      
     
     // menu sakiyo
-    Container(
-      alignment: Alignment.center,
-      child: const Text('Order data not found'),
-    ),
+    // Container(
+    //   alignment: Alignment.center,
+    //   child: const Text('Order data not found'),
+    // ),
   ],
 ),
 
